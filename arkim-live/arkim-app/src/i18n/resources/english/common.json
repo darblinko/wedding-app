@@ -1,0 +1,386 @@
+{
+	"layout": {
+		"version": "Version",
+		"title": "maintenance portal",
+		"tooltips": {
+			"notifications": "Notifications",
+			"profile": "Profile Settings"
+		},
+		"menu": {
+			"dashboard": "Dashboard",
+			"readings": "Sensor Readings",
+			"company": "Company Details",
+			"users": "User Management",
+			"locations": "Locations Management",
+			"equipment": "Equipment Management",
+			"apiKeys": "API Keys Management"
+		},
+		"preferences": {
+			"title": "User Info",
+			"admin": "(admin)",
+			"theme": {
+				"title": "Theme",
+				"light": "Light",
+				"dark": "Dark"
+			},
+			"language": "Language",
+			"defaultLocation": "Default Location",
+			"signOut": "Sign Out",
+			"security": "Security",
+			"changePassword": "Change Password",
+			"currentPassword": "Current Password",
+			"newPassword": "New Password",
+			"confirmNewPassword": "Confirm New Password",
+			"updatePassword": "Update Password",
+			"passwordResetConfirmation": "Are you sure you want to update your password?",
+			"passwordResetSuccess": "Password updated successfully",
+			"passwordResetError": "Failed to update password",
+			"updateSuccess": "Preferences updated!"
+		}
+	},
+	"ui": {},
+	"common": {
+		"save": "Save",
+		"confirmationTitle": "Confirmation Required",
+		"saving": "Saving...",
+		"cancel": "Cancel",
+		"close": "Close",
+		"delete": "Delete",
+		"reset": "Reset",
+		"edit": "Edit",
+		"refresh": "Refresh",
+		"search": "Search",
+		"filter": "Filter",
+		"loading": "Loading...",
+		"redirecting": "Redirecting to login...",
+		"submit": "Submit",
+		"processing": "Processing...",
+		"generate": "Generate",
+		"generating": "Generating...",
+		"lastUpdated": "Last updated",
+		"noData": "No Data",
+		"notAvailableShort": "N/A",
+		"minShort": "Min",
+		"maxShort": "Max",
+		"loadMore": "Load More"
+	},
+	"validation": {
+		"companyNameRequired": "Company name is required",
+		"companyPinRequired": "Company ID is required",
+		"companyPinFormat": "Company ID must only contain lowercase letters and dashes (max 15 chars)",
+		"firstNameRequired": "First name is required",
+		"lastNameRequired": "Last name is required",
+		"loginNameRequired": "Login name is required",
+		"emailRequired": "Email is required",
+		"locationNameRequired": "Location name is required",
+		"emailInvalid": "Email is not valid",
+		"passwordRequired": "Password is required",
+		"passwordMinLength": "Password must be at least 8 characters",
+		"passwordsDoNotMatch": "Passwords do not match",
+		"currentPasswordRequired": "Current password is required",
+		"equipmentNameRequired": "Equipment name is required",
+		"locationRequired": "Location is required",
+		"manufacturerRequired": "Manufacturer is required",
+		"modelRequired": "Model is required",
+		"serialNumberRequired": "Serial number is required",
+		"minTempRequired": "Minimum temperature is required",
+		"maxTempRequired": "Maximum temperature is required",
+		"tempRangeInvalid": "Maximum temperature must be greater than minimum temperature",
+		"minHumidityRequired": "Minimum humidity is required",
+		"maxHumidityRequired": "Maximum humidity is required",
+		"humidityRangeInvalid": "Maximum humidity must be greater than minimum humidity",
+		"sensorIdRequired": "Sensor ID is required",
+		"sensorIdMustBeUnique": "Sensor ID must be unique"
+	},
+	"time": {
+		"justNow": "Just now",
+		"minutesAgo": "{{count}} mins ago",
+		"hoursAgo": "{{count}} hours ago",
+		"daysAgo": "{{count}} days ago"
+	},
+	"error": {
+		"authenticationError": "Authentication Error",
+		"tryAgain": "Try Again",
+		"failedToFetch": "Failed to fetch data"
+	},
+	"auth": {
+		"createAccount": "Create an Account",
+		"alreadyHaveAccount": "Already have an account?",
+		"dontHaveAccount": "Don't have an account?",
+		"signIn": "Sign in",
+		"signUp": "Sign Up",
+		"signOut": "Sign Out",
+		"signOutConfirmation": "Are you sure you want to sign out?",
+		"changePassword": "Change Password",
+		"signedOut": {
+			"title": "You've been signed out",
+			"message": "You have successfully signed out of your account.",
+			"backToHome": "Back to Home"
+		},
+		"form": {
+			"companyName": "Company Name",
+			"companyPin": "Company ID",
+			"companyPinHelp": "Lowercase letters and dashes only (max 15 chars)",
+			"firstName": "First Name",
+			"lastName": "Last Name",
+			"loginName": "Login Name",
+			"email": "Email",
+			"password": "Password",
+			"confirmPassword": "Confirm Password",
+			"rememberMe": "Remember me"
+		},
+		"signup": {
+			"success": "Registration successful!",
+			"redirect": "You will be redirected to the login page shortly.",
+			"error": "An error occurred during registration. Please try again."
+		}
+	},
+	"dashboard": {
+		"title": "Dashboard",
+		"locationsLoading": "Loading locations...",
+		"noLocationsTitle": "No Locations Available",
+		"noLocationsDescription": "You don't have access to any locations. Please contact your administrator.",
+		"equipmentStatus": "Equipment Status",
+		"noAssetData": "No asset status data available",
+		"deviceOffline": "Device is currently offline",
+		"assetIssueTypes": {
+			"Temperature_Below": "Temperature below minimum",
+			"Temperature_Above": "Temperature above maximum",
+			"Temperature_NotReceived": "Temperature data not received",
+			"Humidity_Below": "Humidity below minimum",
+			"Humidity_Above": "Humidity above maximum",
+			"Humidity_NotReceived": "Humidity data not received"
+		},
+		"assetIssues": {
+			"title": "Issues Detected",
+			"noIssues": "No Issues"
+		},
+		"locationStatus": {
+			"normal": "Normal",
+			"critical": "Critical"
+		},
+		"statusExplanations": {
+			"serverError": "Server error occurred while fetching data.",
+			"normal": "All assets are operating within normal parameters.",
+			"critical": "{{count}} assets in critical condition requiring immediate attention."
+		},
+		"charts": {
+			"temperatureTrend": "Temperature Trend",
+			"humidityTrend": "Humidity Trend",
+			"temperatureC": "Temperature, °C",
+			"temperatureF": "Temperature, °F",
+			"humidity": "Humidity, %",
+			"time": "Time"
+		}
+	},
+	"notFound": {
+		"title": "Page Not Found",
+		"message": "The page you are looking for doesn't exist or has been moved.",
+		"backToHome": "Back to Home",
+		"404": "404"
+	},
+	"company": {
+		"companySettings": "Company Settings",
+		"basicInformation": "Company Information",
+		"preferences": "Default Preferences",
+		"preferencesDescription": "Set default preferences for units of measurement, theme and language.",
+		"companyId": "Company ID",
+		"companyName": "Company Name",
+		"address": "Address",
+		"email": "Email",
+		"unitSystem": "Units of Measure",
+		"unitSystemDescription": "The measurement system will be set in new locations by default.",
+		"metric": "Metric (kg, cm, °C)",
+		"imperial": "Imperial (lb, in, °F)",
+		"defaultTheme": "Default Theme",
+		"defaultThemeDescription": "Theme that will be used for new users by default.",
+		"defaultLanguage": "Default Language",
+		"defaultLanguageDescription": "Language that will be used for new users by default.",
+		"settingsSaved": "Company settings saved successfully",
+		"saveFailed": "Failed to save company settings",
+		"noSettingsFound": "No company settings found",
+		"saveConfirmation": "Are you sure you want to save the changes to the company?"
+	},
+	"users": {
+		"title": "Users",
+		"admin": "Admin",
+		"current": "Current User",
+		"form": {
+			"createNewUser": "Create New User",
+			"editUser": "Edit User",
+			"active": "Active",
+			"inactive": "Inactive",
+			"deactivate": "Deactivate",
+			"activate": "Activate",
+			"administrator": "Administrator",
+			"tabs": {
+				"basicInfo": "Basic Info",
+				"preferences": "Preferences",
+				"locations": "Locations"
+			},
+			"locationAllocations": {
+				"assigned": "Assigned",
+				"default": "Default"
+			}
+		},
+		"confirmations": {
+			"createUser": "Are you sure you want to create this user?",
+			"updateUser": "Are you sure you want to update this user?",
+			"createUserTitle": "Create User",
+			"updateUserTitle": "Update User",
+			"toggleActiveStatus": "Are you sure you want to {{action}} this user?",
+			"toggleActiveStatusTitle": "Toggle User Status"
+		},
+		"messages": {
+			"userCreated": "User created successfully",
+			"userUpdated": "User updated successfully",
+			"userActivated": "User activated successfully",
+			"userDeactivated": "User deactivated successfully",
+			"failedToLoadUser": "Failed to load user details: {{error}}",
+			"failedToUpdateStatus": "Failed to update user status"
+		}
+	},
+	"locations": {
+		"title": "Locations",
+		"name": "Location Name",
+		"description": "Description",
+		"noLocationsAvailable": "No locations available",
+		"form": {
+			"createNewLocation": "Create New Location",
+			"editLocation": "Edit Location",
+			"locationName": "Location Name",
+			"description": "Description",
+			"email": "Email"
+		},
+		"confirmations": {
+			"create": "Are you sure you want to create this location?",
+			"update": "Are you sure you want to update this location?",
+			"delete": "Are you sure you want to delete this location?"
+		},
+		"messages": {
+			"locationCreated": "Location created successfully",
+			"locationUpdated": "Location updated successfully",
+			"locationDeleted": "Location deleted successfully"
+		}
+	},
+	"equipment": {
+		"title": "Equipment",
+		"form": {
+			"createNewEquipment": "Create New Equipment",
+			"editEquipment": "Edit Equipment",
+			"tabs": {
+				"basicInfo": "Basic Information",
+				"deviceDetails": "Device Details",
+				"specification": "Technical Specification",
+				"sensors": "Sensors"
+			},
+			"basicInfo": "Basic Information",
+			"equipmentName": "Equipment Name",
+			"type": "Equipment Type",
+			"location": "Location",
+			"description": "Description",
+			"deviceDetails": "Device Details",
+			"technicalDetails": "Technical Details",
+			"manufacturer": "Manufacturer",
+			"model": "Model",
+			"serialNumber": "Serial Number",
+			"operationalLimits": "Operational Limits",
+			"minOperatingTemperatureC": "Minimum Operating Temperature",
+			"maxOperatingTemperatureC": "Maximum Operating Temperature",
+			"minOperatingHumidityPercent": "Minimum Operating Humidity",
+			"maxOperatingHumidityPercent": "Maximum Operating Humidity",
+			"sensors": "Sensors",
+			"sensorDetails": "Sensor Details",
+			"sensorId": "Sensor ID",
+			"sensorDescription": "Sensor Description",
+			"sensorType": "Sensor Type",
+			"addSensor": "Add Sensor",
+			"removeSensor": "Remove",
+			"saveReminder": "Remember to save changes to make them effective",
+			"noSensors": "No sensors added to this equipment yet"
+		},
+		"confirmations": {
+			"create": "Are you sure you want to create this equipment?",
+			"update": "Are you sure you want to update this equipment?",
+			"delete": "Are you sure you want to delete this equipment?",
+			"removeSensor": "Are you sure you want to remove this sensor?"
+		},
+		"messages": {
+			"equipmentCreated": "Equipment created successfully",
+			"equipmentUpdated": "Equipment updated successfully",
+			"equipmentDeleted": "Equipment deleted successfully"
+		}
+	},
+	"notifications": {
+		"title": "Notifications",
+		"noNotifications": "No new notifications",
+		"showHandled": "Show handled",
+		"markAsHandled": "Mark as handled",
+		"processing": "Processing...",
+		"markedAsHandled": "Notification marked as handled",
+		"fetchError": "Failed to load notifications",
+		"markAsHandledError": "Failed to mark notification as handled",
+		"handledBy": "Handled by {{user}} at {{time}}",
+		"navigate": "View details",
+		"clickToNavigate": "Click to navigate to related content"
+	},
+	"apiKeys": {
+		"title": "API Keys",
+		"generateNew": "Generate New Key",
+		"noKeys": "No API keys found",
+		"description": "Description",
+		"enterDescription": "Enter a description for this API key",
+		"descriptionRequired": "Description is required",
+		"accessKey": "Access Key",
+		"secret": "Secret Key",
+		"active": "Active",
+		"inactive": "Inactive",
+		"status": "Status",
+		"createdAt": "Created At",
+		"unknown": "Unknown",
+		"delete": "Delete",
+		"deleteTitle": "Delete API Key",
+		"deleteConfirmation": "Are you sure you want to delete this API key? This action cannot be undone.",
+		"deleteSuccess": "API key deleted successfully",
+		"deleteError": "Failed to delete API key",
+		"activate": "Activate",
+		"deactivate": "Deactivate",
+		"statusToggled": "API key status updated successfully",
+		"statusToggleError": "Failed to update API key status",
+		"loadError": "Failed to load API keys",
+		"generateError": "Failed to generate API key",
+		"newApiKeyCreated": "New API Key Created",
+		"secretWarning": "IMPORTANT: The secret key will be shown only once. Please copy it now or download the key details. You won't be able to retrieve it later.",
+		"copyAccessKey": "Copy Access Key",
+		"copySecret": "Copy Secret Key",
+		"accessKeyCopied": "Access key copied to clipboard",
+		"secretCopied": "Secret key copied to clipboard",
+		"copyError": "Failed to copy to clipboard",
+		"downloadAsFile": "Download as File",
+		"downloadSuccess": "API key details downloaded",
+		"noDescription": "No description",
+		"details": "API Key Details",
+		"selectOrCreate": "Select an API key from the list or create a new one."
+	},
+	"reports": {
+		"run": "Run"
+	},
+	"readings": {
+		"title": "Sensor Readings",
+		"equipment": "Equipment",
+		"sensorId": "Sensor ID",
+		"timestamp": "Timestamp",
+		"readingType": "Reading Type",
+		"value": "Value",
+		"filters": {
+			"title": "Filters",
+			"assets": "Assets",
+			"sensors": "Sensors",
+			"metricTypes": "Metric Types",
+			"noOptions": "No options available",
+			"selectAssets": "Select Assets",
+			"selectSensors": "Select Sensors",
+			"selectMetricTypes": "Select Metric Types"
+		}
+	}
+}

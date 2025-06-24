@@ -1,0 +1,22 @@
+{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Effect": "Allow",
+			"Action": ["s3:PutObject", "s3:GetObject", "s3:ListBucket", "s3:DeleteObject"],
+			"Resource": ["arn:aws:s3:::arkim-dashboard-*", "arn:aws:s3:::arkim-dashboard-*/*"]
+		},
+		{
+			"Effect": "Allow",
+			"Action": ["cloudfront:CreateInvalidation", "cloudfront:GetInvalidation", "cloudfront:ListInvalidations"],
+			"Resource": ["arn:aws:cloudfront::*:distribution/*"]
+		},
+		{
+			"Effect": "Allow",
+			"Action": [
+				"ssm:GetParameter"
+			],
+			"Resource": "arn:aws:ssm:*:*:parameter/arkim/webapp/frontend/*"
+		}
+	]
+}

@@ -1,0 +1,24 @@
+{
+	// Use IntelliSense to learn about possible attributes.
+	// Hover to view descriptions of existing attributes.
+	// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "Debug Deploy Tool",
+			"skipFiles": [
+				"<node_internals>/**"
+			],
+			"program": "${workspaceFolder}/cicd/deploy/index.ts",
+			"outFiles": [
+				"${workspaceFolder}/cicd/deploy/dist/**/*.js"
+			],
+			"args": ["arkim-dev", "all", "force"],
+			"sourceMaps": true,
+			"cwd": "${workspaceFolder}/cicd/deploy",
+			"preLaunchTask": "tsc: build - cicd/deploy/tsconfig.json"
+		}
+	]
+}
